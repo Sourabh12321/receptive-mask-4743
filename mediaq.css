@@ -1,0 +1,22 @@
+@media (max-width:1000px) {
+  
+    .fa-bars{
+
+        display: block;
+        font-size: 2rem;
+        margin: 0  10px;
+    }
+    #footer {
+        padding: 0 20px;
+        width: 90%;
+        display: block;
+    }
+    #footer_1{
+        padding: 0 20px;
+        width: 90%;
+        display: block;
+    }
+    #footer_1>div{
+        margin: 20px 0;
+    }
+}
