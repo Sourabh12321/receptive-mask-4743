@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* *{
+        margin: 0;
+        padding: 0;
+    } */
+    body{
+        background-color: rgb(178, 183, 241);
+    }
+    #first{
+        height:100%;
+        width:100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        text-shadow: 2px 2px 3px rgb(0, 0, 0);
+        font-size: 3.5rem;
+        color: white;
+        margin: 0;
+    }
+    #first>div{
+        border: 2px solid black;
+        background: linear-gradient(45deg,rgb(243, 148, 148),rgb(152, 152, 243),rgb(155, 230, 155));
+        height:100%;
+        width:30%;
+        margin:5em auto;
+        box-shadow: rgba(0, 0, 0) 0px 5px 15px;
+        padding:50px 20px 100px 20px;
+        background-color: black;
+        color:white
+    }
+    h2{
+        text-shadow: 2px 2px 3px black;
+        font-size: 3rem;
+        margin: 0 0 40px 0;
+    }
+   input{
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px 0;
+    border: none;
+   }
+   #submit{
+    width: 50%;
+    border: 2px solid black;
+    margin: 20px auto 0 auto;
+    transition:  all 1s;
+   }
+   #submit:hover{
+   background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+   }
+</style>
+
+<body>
+    <h1>J.CREW</h1>
+    <div id="first">
+        <div>
+            <h2> Sign up page</h2>
+            <input type="text" id="email" placeholder="ENTER Your Email"></input>
+            <input type="text" id="password" placeholder="ENTER Your Password"></input>
+            <input type="submit" id="submit" onClick="show()"></input>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function show(){
+        let e = document.getElementById("email").value;
+        let p = document.getElementById("password").value;
+        if(e=="sourabh.rajput.222082001@gmail.com"|| p=="sourabh"){
+            alert("login successfull")
+        }else{
+            alert("wrong password");
+        }
+    }
+
+</script>
